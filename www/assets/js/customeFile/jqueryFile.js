@@ -1,9 +1,5 @@
-define(['ajaxJquery', 'datatables', 'methods'], function (method) {
-    jQuery(document).ready(function($, method){
-        $('#clickMe').click(function () {
-           method.changeHTML('I WAS CLICKEDT');
-        });
-        //$('#onTouchCarrier').DataTable();
+define(['ajaxJquery', 'datatables', 'methods'],function () {
+    jQuery(document).ready(function($){
         $('#example').DataTable({
             ajax: 'data/arrays.txt',
         });
