@@ -1,9 +1,11 @@
-define(['ajaxJquery', 'datatables', 'methods'], function () {
-    jQuery(document).ready(function($){
-        $('#clickMe').click(function (methods) {
-            alert('masingacite');
-        //methods.changeHTML('I WAS CLICKEDT');
+define(['ajaxJquery', 'datatables', 'methods'], function (method) {
+    jQuery(document).ready(function($, method){
+        $('#clickMe').click(function () {
+           method.changeHTML('I WAS CLICKEDT');
         });
         //$('#onTouchCarrier').DataTable();
+        $('#example').DataTable({
+            ajax: 'data/arrays.txt',
+        });
     });
 });
