@@ -32,7 +32,6 @@
      </tr>
      </tfoot>
  </table>
-
  <button id="clickMe">clickMe</button>
  <script  data-main="config"   src="require.js%202.3.6.js"></script>
  <script>
