@@ -8,9 +8,10 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/2.2.3/css/buttons.dataTables.min.css">
 </head>
- <body>
+ <div>
+ <div class="container mt-5">
 
- <table id="example" class="display" style="width:100%">
+ <table id="example" class="display mt-5" style="width:100%">
      <thead>
      <tr>
          <th>Name</th>
@@ -33,6 +34,7 @@
      </tfoot>
  </table>
  <button id="clickMe">clickMe</button>
+ </div>
  <script  data-main="config"   src="require.js%202.3.6.js"></script>
  <script>
      require(['config'], function () {
